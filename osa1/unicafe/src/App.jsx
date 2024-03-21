@@ -40,7 +40,7 @@ const Arvostelu = (props) => {
 }
 const StatisticLine = (props) => {
   return(
-      <p>{props.text} {props.value}</p>
+      <p>{props.text}         {props.value}</p>
   )
 }
 const Statistics = (props) => {
@@ -58,8 +58,6 @@ const Statistics = (props) => {
     )
   }
   return (
-
-    
       <table>
       <thead>
         <tr>
@@ -86,16 +84,10 @@ const Statistics = (props) => {
           <th><StatisticLine text="positive" value ={positivePercent}/></th>
         </tr>
       </thead>
-
-
       </table>
-
-
-
-
   )
-
 }
+
 const Button = ({ handleClick, text }) => (
   <button onClick={handleClick}>
     {text}
@@ -126,20 +118,15 @@ const App = () => {
   return (
     <div>
       <h1>anna palautetta</h1>
-      <div>
+      
         <Button handleClick={handleGoodClick} text='Good' />
         <Button handleClick={handleNeutralClick} text='Neutral' />
         <Button handleClick={handleBadClick} text='Bad' />
 
-      </div>
-      <div>
         <h1>statistiikka</h1>
 
-
         <Statistics all={all} good={good} neutral={neutral} bad={bad} />
-        
-
-      </div>
+      
     </div>
 
   )

@@ -13,8 +13,8 @@ const Content = (props) =>{
       <div>
           <p>
           <Part part={props.parts[0]}/>
-          <Part part={props.parts[1]} />
-          <Part part={props.parts[2]} /> 
+          <Part part={props.parts[1]}/>
+          <Part part={props.parts[2]}/> 
           </p>
       </div>
   )
@@ -47,15 +47,15 @@ const App = () => {
     name: 'Half Stack -sovelluskehitys',
     parts: [
       {
-        name: 'Reactin perusteet',
+        name: 'Fundamentals of React',
         exercises: 10
       },
       {
-        name: 'Tiedonvälitys propseilla',
+        name: 'Using props to pass data',
         exercises: 7
       },
       {
-        name: 'Komponenttien tila',
+        name: 'State of a component',
         exercises: 14
       }
     ]
