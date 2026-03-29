@@ -2,17 +2,24 @@ import React from 'react'
 import Person from './Person'
 
 const PersonsList = (props) => {
-    const {persons, newFilter} = props
+    const {persons, filter, removePerson} = props
 
 
     
     return (
-        <li>
-            {persons.map(person =>
-            <p key={person.name}> {person.name} {person.number}</p>
+        <ul>
+            {persons.map(person => {
+                return (
+
+                        <li key={person.name}>
+                        <Person person={person} removePerson={removePerson}/>
+                    </li>
+
+                )
+            }
         )}
     
-        </li>
+        </ul>
     )
 }
 
